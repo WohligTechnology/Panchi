@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		787F66D51BD7BF28001BA709 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 787F66D41BD7BF28001BA709 /* TableViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		78B32DF71BD62E3A005EE7E2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78B32DF61BD62E3A005EE7E2 /* AppDelegate.swift */; };
 		78B32DF91BD62E3A005EE7E2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78B32DF81BD62E3A005EE7E2 /* ViewController.swift */; };
 		78B32DFC1BD62E3B005EE7E2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78B32DFA1BD62E3B005EE7E2 /* Main.storyboard */; };
@@ -34,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		787F66D41BD7BF28001BA709 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		78B32DF31BD62E3A005EE7E2 /* NoteShare.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NoteShare.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		78B32DF61BD62E3A005EE7E2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		78B32DF81BD62E3A005EE7E2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -99,6 +101,7 @@
 			children = (
 				78B32DF61BD62E3A005EE7E2 /* AppDelegate.swift */,
 				78B32DF81BD62E3A005EE7E2 /* ViewController.swift */,
+				787F66D41BD7BF28001BA709 /* TableViewController.swift */,
 				78B32DFA1BD62E3B005EE7E2 /* Main.storyboard */,
 				78B32DFD1BD62E3B005EE7E2 /* Assets.xcassets */,
 				78B32DFF1BD62E3B005EE7E2 /* LaunchScreen.storyboard */,
@@ -257,6 +260,7 @@
 			files = (
 				78B32DF91BD62E3A005EE7E2 /* ViewController.swift in Sources */,
 				78B32DF71BD62E3A005EE7E2 /* AppDelegate.swift in Sources */,
+				787F66D51BD7BF28001BA709 /* TableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -485,6 +489,7 @@
 				78B32E1D1BD62E3B005EE7E2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		78B32E1E1BD62E3B005EE7E2 /* Build configuration list for PBXNativeTarget "NoteShareTests" */ = {
 			isa = XCConfigurationList;
@@ -493,6 +498,7 @@
 				78B32E201BD62E3B005EE7E2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		78B32E211BD62E3B005EE7E2 /* Build configuration list for PBXNativeTarget "NoteShareUITests" */ = {
 			isa = XCConfigurationList;
@@ -501,6 +507,7 @@
 				78B32E231BD62E3B005EE7E2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
