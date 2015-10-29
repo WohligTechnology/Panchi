@@ -7,12 +7,14 @@
 //
 
 import UIKit
-import SDevIconFonts
 
 @available(iOS 8.0, *)
 class TableViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, UISearchResultsUpdating {
     
     @IBOutlet weak var tableView: UITableView!
+    
+    let mainColor = UIColor(red: 255.0/255.0, green: 90.0/255.0, blue: 96.0/255.0, alpha: 1.0)
+    let hoverColor = UIColor(red: 255.0/255.0, green: 172.0/255.0, blue: 175.0/255.0, alpha: 1.0)
     
     var notes = ["BOTANY: THE CLASSIFICATION OF MANY BOX", "Physics Theory Links", "Maths", "Computer Science", "Graphics"]
     var filteredNotes = [String]()
@@ -68,7 +70,7 @@ class TableViewController: UIViewController, UITableViewDataSource, UITableViewD
         
         //Set hover color for the Cells
         let bgView : UIView = UIView()
-        bgView.backgroundColor = UIColor(red: 255.0/255.0, green: 172.0/255.0, blue: 175.0/255.0, alpha: 1.0)
+        bgView.backgroundColor = hoverColor
         cell!.selectedBackgroundView = bgView
         
         if (self.resultSearchController.active)
@@ -114,7 +116,7 @@ class TableViewController: UIViewController, UITableViewDataSource, UITableViewD
             self.presentViewController(activityViewController, animated: true, completion: nil)
     }
         
-        shareAction.backgroundColor = UIColor(red: 255.0/255.0, green: 90.0/255.0, blue: 96.0/255.0, alpha: 1.0)
+        shareAction.backgroundColor = mainColor
     
         return [shareAction]
         
