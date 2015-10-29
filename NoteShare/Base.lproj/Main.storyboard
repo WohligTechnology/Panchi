@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
@@ -179,26 +179,17 @@
                         <viewControllerLayoutGuide type="bottom" id="7iS-Bl-FNU"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Ylf-yA-NFk">
-                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="WEs-je-h7L">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="460"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <inset key="separatorInset" minX="15" minY="0.0" maxX="15" maxY="0.0"/>
-                                <searchBar key="tableHeaderView" contentMode="redraw" id="MvQ-ma-Sfo">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    <animations/>
-                                    <textInputTraits key="textInputTraits"/>
-                                    <connections>
-                                        <outlet property="delegate" destination="fSw-qj-SFB" id="Hyn-tQ-wQY"/>
-                                    </connections>
-                                </searchBar>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" textLabel="cYq-z8-CEG" style="IBUITableViewCellStyleDefault" id="Ch7-7y-2n3">
-                                        <rect key="frame" x="0.0" y="72" width="320" height="44"/>
+                                        <rect key="frame" x="0.0" y="92" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Ch7-7y-2n3" id="5rc-dp-9GK">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
@@ -229,15 +220,14 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="WEs-je-h7L" secondAttribute="trailing" id="4mI-YB-Yar"/>
-                            <constraint firstItem="WEs-je-h7L" firstAttribute="top" secondItem="rQd-n4-6VA" secondAttribute="bottom" id="GLp-Nm-rfg"/>
                             <constraint firstItem="WEs-je-h7L" firstAttribute="leading" secondItem="Ylf-yA-NFk" secondAttribute="leading" id="T1h-GA-ABh"/>
-                            <constraint firstItem="WEs-je-h7L" firstAttribute="bottom" secondItem="7iS-Bl-FNU" secondAttribute="top" constant="-44" id="ZRG-4z-ddk"/>
+                            <constraint firstItem="WEs-je-h7L" firstAttribute="top" secondItem="Ylf-yA-NFk" secondAttribute="top" id="Tsf-YL-LBw"/>
+                            <constraint firstItem="WEs-je-h7L" firstAttribute="bottom" secondItem="7iS-Bl-FNU" secondAttribute="top" id="ZRG-4z-ddk"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Notes" id="Qft-W8-cf3"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
-                        <outlet property="searchBar" destination="MvQ-ma-Sfo" id="CVP-NP-QOb"/>
                         <outlet property="searchDisplayController" destination="yhu-Nb-w5N" id="cLg-hW-YSG"/>
                         <outlet property="tableView" destination="WEs-je-h7L" id="bLn-kP-k8t"/>
                     </connections>
@@ -246,7 +236,6 @@
                 <searchDisplayController id="yhu-Nb-w5N">
                     <connections>
                         <outlet property="delegate" destination="fSw-qj-SFB" id="PCq-Su-VaF"/>
-                        <outlet property="searchBar" destination="MvQ-ma-Sfo" id="spu-6x-jlY"/>
                         <outlet property="searchContentsController" destination="fSw-qj-SFB" id="ks6-Pu-qt0"/>
                         <outlet property="searchResultsDataSource" destination="fSw-qj-SFB" id="32b-Ll-eo9"/>
                         <outlet property="searchResultsDelegate" destination="fSw-qj-SFB" id="5bu-Tb-Iri"/>
@@ -261,7 +250,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="yEx-DJ-Aau" sceneMemberID="viewController">
                     <toolbarItems/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="BC8-R8-r4O">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="BC8-R8-r4O">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <animations/>
@@ -273,6 +262,11 @@
                         </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="3Lx-NT-gNI">
+                        <rect key="frame" x="0.0" y="524" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                    </toolbar>
                     <connections>
                         <segue destination="fSw-qj-SFB" kind="relationship" relationship="rootViewController" id="Ar9-tk-9hJ"/>
                     </connections>

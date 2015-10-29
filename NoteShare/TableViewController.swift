@@ -7,19 +7,16 @@
 //
 
 import UIKit
+import SDevIconFonts
 
 @available(iOS 8.0, *)
 class TableViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, UISearchResultsUpdating {
     
     @IBOutlet weak var tableView: UITableView!
-    @IBOutlet weak var searchBar: UISearchBar!
     
-    let notes = ["BOTANY: THE CLASSIFICATION OF MANY BOX", "Physics Theory Links", "Maths", "Computer Science", "Graphics"]
+    var notes = ["BOTANY: THE CLASSIFICATION OF MANY BOX", "Physics Theory Links", "Maths", "Computer Science", "Graphics"]
     var filteredNotes = [String]()
-    var resultSearchController = UISearchController()
-
-    
-    var textArray: NSMutableArray! = NSMutableArray()
+    var resultSearchController = UISearchController!()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,18 +29,13 @@ class TableViewController: UIViewController, UITableViewDataSource, UITableViewD
         self.tableView.tableHeaderView = self.resultSearchController.searchBar
         self.tableView.reloadData()
         
-        //Automate the height of rows
-        self.tableView.rowHeight = UITableViewAutomaticDimension
-        self.tableView.estimatedRowHeight = 44.0
-        
         //Clear Empty Cells
-        var backgroundView = UIView(frame: CGRectZero)
+        let backgroundView = UIView(frame: CGRectZero)
         self.tableView.tableFooterView = backgroundView
         self.tableView.backgroundColor = UIColor.clearColor()
         
         //Show search on scroll
         self.tableView.setContentOffset(CGPoint(x: 0,y: 44), animated: true)
-        self.searchBar.resignFirstResponder()
         
     }
     
@@ -52,6 +44,10 @@ class TableViewController: UIViewController, UITableViewDataSource, UITableViewD
         // Dispose of any resources that can be recreated.
     }
     
+    func numberOfSectionsInTableView(tableView: UITableView) -> Int
+    {
+        return 1
+    }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
@@ -68,10 +64,10 @@ class TableViewController: UIViewController, UITableViewDataSource, UITableViewD
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
         //Put data into cells
-        var cell = tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath) as UITableViewCell?
+        let cell = tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath) as UITableViewCell?
         
         //Set hover color for the Cells
-        var bgView : UIView = UIView()
+        let bgView : UIView = UIView()
         bgView.backgroundColor = UIColor(red: 255.0/255.0, green: 172.0/255.0, blue: 175.0/255.0, alpha: 1.0)
         cell!.selectedBackgroundView = bgView
         
@@ -99,6 +95,29 @@ class TableViewController: UIViewController, UITableViewDataSource, UITableViewD
         self.filteredNotes = array as! [String]
         
         self.tableView.reloadData()
+    }
+    
+    func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath)
+    {
+        
+    }
+    
+    func tableView(tableView: UITableView, editActionsForRowAtIndexPath indexPath: NSIndexPath) -> [UITableViewRowAction]?
+    {
+        
+        let shareAction = UITableViewRowAction(style: .Normal, title: "Share") { (action: UITableViewRowAction!, indexPath: NSIndexPath!) -> Void in
+            
+            let firstActivityItem = self.notes[indexPath.row]
+            
+            let activityViewController = UIActivityViewController(activityItems: [firstActivityItem], applicationActivities: nil)
+            
+            self.presentViewController(activityViewController, animated: true, completion: nil)
+    }
+        
+        shareAction.backgroundColor = UIColor(red: 255.0/255.0, green: 90.0/255.0, blue: 96.0/255.0, alpha: 1.0)
+    
+        return [shareAction]
+        
     }
 
 }
