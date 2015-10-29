@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7879C3941BE2687E00764843 /* MGSwipeTableCell in Resources */ = {isa = PBXBuildFile; fileRef = 7879C3931BE2687E00764843 /* MGSwipeTableCell */; settings = {ASSET_TAGS = (); }; };
 		787F66D51BD7BF28001BA709 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 787F66D41BD7BF28001BA709 /* TableViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		78B32DF71BD62E3A005EE7E2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78B32DF61BD62E3A005EE7E2 /* AppDelegate.swift */; };
 		78B32DF91BD62E3A005EE7E2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78B32DF81BD62E3A005EE7E2 /* ViewController.swift */; };
@@ -35,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7879C3931BE2687E00764843 /* MGSwipeTableCell */ = {isa = PBXFileReference; lastKnownFileType = folder; name = MGSwipeTableCell; path = Libraries/MGSwipeTableCell; sourceTree = "<group>"; };
+		7879C3971BE26A0600764843 /* NoteShare-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NoteShare-Bridging-Header.h"; sourceTree = "<group>"; };
 		787F66D41BD7BF28001BA709 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		78B32DF31BD62E3A005EE7E2 /* NoteShare.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NoteShare.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		78B32DF61BD62E3A005EE7E2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -79,6 +82,7 @@
 		78B32DEA1BD62E3A005EE7E2 = {
 			isa = PBXGroup;
 			children = (
+				7879C3931BE2687E00764843 /* MGSwipeTableCell */,
 				78B32DF51BD62E3A005EE7E2 /* NoteShare */,
 				78B32E0A1BD62E3B005EE7E2 /* NoteShareTests */,
 				78B32E151BD62E3B005EE7E2 /* NoteShareUITests */,
@@ -106,6 +110,7 @@
 				78B32DFD1BD62E3B005EE7E2 /* Assets.xcassets */,
 				78B32DFF1BD62E3B005EE7E2 /* LaunchScreen.storyboard */,
 				78B32E021BD62E3B005EE7E2 /* Info.plist */,
+				7879C3971BE26A0600764843 /* NoteShare-Bridging-Header.h */,
 			);
 			path = NoteShare;
 			sourceTree = "<group>";
@@ -190,6 +195,7 @@
 		78B32DEB1BD62E3A005EE7E2 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "Tushar Sachde";
 				TargetAttributes = {
@@ -231,6 +237,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7879C3941BE2687E00764843 /* MGSwipeTableCell in Resources */,
 				78B32E011BD62E3B005EE7E2 /* LaunchScreen.storyboard in Resources */,
 				78B32DFE1BD62E3B005EE7E2 /* Assets.xcassets in Resources */,
 				78B32DFC1BD62E3B005EE7E2 /* Main.storyboard in Resources */,
@@ -402,11 +409,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = NoteShare/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.wohlig.noteshare;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "NoteShare/NoteShare-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -414,11 +424,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = NoteShare/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.wohlig.noteshare;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "NoteShare/NoteShare-Bridging-Header.h";
 			};
 			name = Release;
 		};
