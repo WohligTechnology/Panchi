@@ -168,7 +168,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3209" y="-120"/>
+            <point key="canvasLocation" x="-3209" y="-116"/>
         </scene>
         <!--Notes-->
         <scene sceneID="PAK-0z-pzT">
@@ -242,7 +242,7 @@
                     </connections>
                 </searchDisplayController>
             </objects>
-            <point key="canvasLocation" x="-2799" y="520"/>
+            <point key="canvasLocation" x="-2829" y="526"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="31w-ED-heI">
@@ -269,8 +269,8 @@
                     </toolbar>
                     <connections>
                         <segue destination="fSw-qj-SFB" kind="relationship" relationship="rootViewController" id="Ar9-tk-9hJ"/>
-                        <segue destination="YOw-NM-3ZS" kind="show" id="S69-7x-jKB"/>
-                        <segue destination="rFo-lb-t4L" kind="show" id="kWu-pa-PGb"/>
+                        <segue destination="YOw-NM-3ZS" kind="show" identifier="terms" id="S69-7x-jKB"/>
+                        <segue destination="rFo-lb-t4L" kind="show" identifier="about" id="kWu-pa-PGb"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="n3k-m3-aLr" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -348,7 +348,7 @@ In no event will &lt;&lt; Insert Company Name &gt;&gt; be liable for any direct,
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6Cw-O3-dx8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3245" y="1203"/>
+            <point key="canvasLocation" x="-3209" y="1165"/>
         </scene>
         <!--About-->
         <scene sceneID="eTa-fV-VqG">
@@ -389,7 +389,7 @@ In no event will &lt;&lt; Insert Company Name &gt;&gt; be liable for any direct,
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="27i-ZE-vh0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2774" y="1187"/>
+            <point key="canvasLocation" x="-2829" y="1165"/>
         </scene>
     </scenes>
     <resources>
