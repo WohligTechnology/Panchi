@@ -74,7 +74,6 @@ class TableViewController: UIViewController, UITableViewDataSource, UITableViewD
         bgView.backgroundColor = hoverColor
         cell!.selectedBackgroundView = bgView
         
-        
         if (self.resultSearchController.active)
         {
             cell!.textLabel?.text = self.filteredNotes[indexPath.row]
@@ -109,14 +108,15 @@ class TableViewController: UIViewController, UITableViewDataSource, UITableViewD
     func tableView(tableView: UITableView, editActionsForRowAtIndexPath indexPath: NSIndexPath) -> [UITableViewRowAction]?
     {
         
-        let shareAction = UITableViewRowAction(style: .Normal, title: "Share") { (action: UITableViewRowAction!, indexPath: NSIndexPath!) -> Void in
+        let shareAction = UITableViewRowAction(style: .Normal, title: "Share")
+            { (action: UITableViewRowAction!, indexPath: NSIndexPath!) -> Void in
             
             let firstActivityItem = self.notes[indexPath.row]
             
             let activityViewController = UIActivityViewController(activityItems: [firstActivityItem], applicationActivities: nil)
             
             self.presentViewController(activityViewController, animated: true, completion: nil)
-    }
+            }
         
         
         shareAction.backgroundColor = mainColor

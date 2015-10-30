@@ -5,6 +5,7 @@
 //  Copyright © 2015 Tushar Sachde. All rights reserved.
 //
 
-#import "../Libraries/MGSwipeTableCell/MGSwipeTableCell.h"
-
-#import "../Libraries/MGSwipeTableCell/MGSwipeButton.h"
+#import "MGSwipeTableCell.h"
+#import "MGSwipeButton.h"
+#import "MZAppearance.h"
+#import "MZFormSheetPresentationViewController.h"
