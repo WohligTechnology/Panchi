@@ -10,8 +10,6 @@ import UIKit
 
 import MGSwipeTableCell
 
-@available(iOS 8.0, *)
-
 class TableViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, UISearchResultsUpdating {
     
     @IBOutlet weak var tableView: UITableView!
@@ -76,7 +74,7 @@ class TableViewController: UIViewController, UITableViewDataSource, UITableViewD
             cell = MGSwipeTableCell(style: UITableViewCellStyle.Subtitle, reuseIdentifier: reuseIdentifier)
         }
         
-        cell.rightButtons = [MGSwipeButton(title: "", icon: UIImage(named:"check.png"), backgroundColor: mainColor)
+        cell.rightButtons = [MGSwipeButton(title: "Delete", backgroundColor: mainColor)
             ,MGSwipeButton(title: "More",backgroundColor: mainColor)]
         
         //Set hover color for the Cells
