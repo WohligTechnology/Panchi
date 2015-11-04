@@ -8,6 +8,8 @@
 
 import UIKit
 
+import MGSwipeTableCell
+
 @available(iOS 8.0, *)
 
 class TableViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, UISearchResultsUpdating {
@@ -67,7 +69,15 @@ class TableViewController: UIViewController, UITableViewDataSource, UITableViewD
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
         //Put data into cells
-        let cell = tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath) as UITableViewCell?
+        let reuseIdentifier = "programmaticCell"
+        var cell = tableView.dequeueReusableCellWithIdentifier("cell") as! MGSwipeTableCell!
+        if cell == nil
+        {
+            cell = MGSwipeTableCell(style: UITableViewCellStyle.Subtitle, reuseIdentifier: reuseIdentifier)
+        }
+        
+        cell.rightButtons = [MGSwipeButton(title: "", icon: UIImage(named:"check.png"), backgroundColor: mainColor)
+            ,MGSwipeButton(title: "More",backgroundColor: mainColor)]
         
         //Set hover color for the Cells
         let bgView : UIView = UIView()
@@ -100,29 +110,5 @@ class TableViewController: UIViewController, UITableViewDataSource, UITableViewD
         self.tableView.reloadData()
     }
     
-    func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath)
-    {
-        
-    }
-    
-    func tableView(tableView: UITableView, editActionsForRowAtIndexPath indexPath: NSIndexPath) -> [UITableViewRowAction]?
-    {
-        
-        let shareAction = UITableViewRowAction(style: .Normal, title: "Share")
-            { (action: UITableViewRowAction!, indexPath: NSIndexPath!) -> Void in
-            
-            let firstActivityItem = self.notes[indexPath.row]
-            
-            let activityViewController = UIActivityViewController(activityItems: [firstActivityItem], applicationActivities: nil)
-            
-            self.presentViewController(activityViewController, animated: true, completion: nil)
-            }
-        
-        
-        shareAction.backgroundColor = mainColor
-    
-        return [shareAction]
-        
-    }
 
 }
