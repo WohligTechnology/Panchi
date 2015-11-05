@@ -15,6 +15,7 @@
 		78B32E011BD62E3B005EE7E2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78B32DFF1BD62E3B005EE7E2 /* LaunchScreen.storyboard */; };
 		78B32E0C1BD62E3B005EE7E2 /* NoteShareTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78B32E0B1BD62E3B005EE7E2 /* NoteShareTests.swift */; };
 		78B32E171BD62E3B005EE7E2 /* NoteShareUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78B32E161BD62E3B005EE7E2 /* NoteShareUITests.swift */; };
+		78F210D41BEB16600077D6B9 /* add.png in Resources */ = {isa = PBXBuildFile; fileRef = 78F210D31BEB16600077D6B9 /* add.png */; };
 		7968463947895F3DD8B9B523 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 192B0558C88CA0CCE08425D2 /* Pods.framework */; };
 /* End PBXBuildFile section */
 
@@ -52,6 +53,7 @@
 		78B32E121BD62E3B005EE7E2 /* NoteShareUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NoteShareUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		78B32E161BD62E3B005EE7E2 /* NoteShareUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteShareUITests.swift; sourceTree = "<group>"; };
 		78B32E181BD62E3B005EE7E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		78F210D31BEB16600077D6B9 /* add.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = add.png; path = assets/add.png; sourceTree = "<group>"; };
 		C788CB587903DF548C424B1F /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		CB6A6E6DA85909601EE621A7 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -119,6 +121,7 @@
 				78B32DF61BD62E3A005EE7E2 /* AppDelegate.swift */,
 				78B32DF81BD62E3A005EE7E2 /* ViewController.swift */,
 				787F66D41BD7BF28001BA709 /* TableViewController.swift */,
+				78F210D21BEB161F0077D6B9 /* assets */,
 				78B32DFA1BD62E3B005EE7E2 /* Main.storyboard */,
 				78B32DFD1BD62E3B005EE7E2 /* Assets.xcassets */,
 				78B32DFF1BD62E3B005EE7E2 /* LaunchScreen.storyboard */,
@@ -144,6 +147,14 @@
 				78B32E181BD62E3B005EE7E2 /* Info.plist */,
 			);
 			path = NoteShareUITests;
+			sourceTree = "<group>";
+		};
+		78F210D21BEB161F0077D6B9 /* assets */ = {
+			isa = PBXGroup;
+			children = (
+				78F210D31BEB16600077D6B9 /* add.png */,
+			);
+			name = assets;
 			sourceTree = "<group>";
 		};
 		B046EB1EC6B3F2D092A82586 /* Frameworks */ = {
@@ -264,6 +275,7 @@
 				78B32E011BD62E3B005EE7E2 /* LaunchScreen.storyboard in Resources */,
 				78B32DFE1BD62E3B005EE7E2 /* Assets.xcassets in Resources */,
 				78B32DFC1BD62E3B005EE7E2 /* Main.storyboard in Resources */,
+				78F210D41BEB16600077D6B9 /* add.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

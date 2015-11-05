@@ -74,7 +74,7 @@ class TableViewController: UIViewController, UITableViewDataSource, UITableViewD
             cell = MGSwipeTableCell(style: UITableViewCellStyle.Subtitle, reuseIdentifier: reuseIdentifier)
         }
         
-        cell.rightButtons = [MGSwipeButton(title: "Delete", icon: "check.png", backgroundColor: mainColor)
+        cell.rightButtons = [MGSwipeButton(title: "Gallery", icon: UIImage(named:"add.png"), backgroundColor: mainColor)
             ,MGSwipeButton(title: "More",backgroundColor: mainColor)]
         
         //Set hover color for the Cells
