@@ -26,8 +26,14 @@ class TableViewController: UIViewController, UITableViewDataSource, UITableViewD
         
         self.resultSearchController = UISearchController(searchResultsController: nil)
         self.resultSearchController.searchResultsUpdater = self
+        self.resultSearchController.hidesNavigationBarDuringPresentation = true
         self.resultSearchController.dimsBackgroundDuringPresentation = false
         self.resultSearchController.searchBar.sizeToFit()
+
+        self.resultSearchController.searchBar.barTintColor = UIColor(red: 255.0/255.0, green: 90.0/255.0, blue: 96.0/255.0, alpha: 1.0)
+        self.resultSearchController.searchBar.translucent = false
+        self.resultSearchController.searchBar.tintColor = UIColor.whiteColor()
+        self.definesPresentationContext = true
         
         self.tableView.tableHeaderView = self.resultSearchController.searchBar
         self.tableView.reloadData()
@@ -39,6 +45,7 @@ class TableViewController: UIViewController, UITableViewDataSource, UITableViewD
         
         //Show search on scroll
         self.tableView.setContentOffset(CGPoint(x: 0,y: 44), animated: true)
+        
         
     }
     
