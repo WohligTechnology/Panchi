@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7873CFF71BF47A5400625501 /* HighlighterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7873CFF61BF47A5400625501 /* HighlighterView.xib */; };
+		7873CFF91BF47A6300625501 /* BrushView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7873CFF81BF47A6300625501 /* BrushView.xib */; };
+		7873CFFB1BF47A7A00625501 /* EraserView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7873CFFA1BF47A7A00625501 /* EraserView.xib */; };
+		7873D0011BF4C4E100625501 /* HighlighterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7873D0001BF4C4E100625501 /* HighlighterView.swift */; };
 		787F66D51BD7BF28001BA709 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 787F66D41BD7BF28001BA709 /* TableViewController.swift */; };
 		78B32DF71BD62E3A005EE7E2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78B32DF61BD62E3A005EE7E2 /* AppDelegate.swift */; };
 		78B32DF91BD62E3A005EE7E2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78B32DF81BD62E3A005EE7E2 /* ViewController.swift */; };
@@ -39,6 +43,10 @@
 /* Begin PBXFileReference section */
 		192B0558C88CA0CCE08425D2 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		782B7E881BE3A03B00AEF9C3 /* NoteShare-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NoteShare-Bridging-Header.h"; sourceTree = "<group>"; };
+		7873CFF61BF47A5400625501 /* HighlighterView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HighlighterView.xib; sourceTree = "<group>"; };
+		7873CFF81BF47A6300625501 /* BrushView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BrushView.xib; sourceTree = "<group>"; };
+		7873CFFA1BF47A7A00625501 /* EraserView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EraserView.xib; sourceTree = "<group>"; };
+		7873D0001BF4C4E100625501 /* HighlighterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HighlighterView.swift; sourceTree = "<group>"; };
 		787F66D41BD7BF28001BA709 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		78B32DF31BD62E3A005EE7E2 /* NoteShare.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NoteShare.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		78B32DF61BD62E3A005EE7E2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -123,6 +131,10 @@
 				787F66D41BD7BF28001BA709 /* TableViewController.swift */,
 				78F210D21BEB161F0077D6B9 /* assets */,
 				78B32DFA1BD62E3B005EE7E2 /* Main.storyboard */,
+				7873CFF61BF47A5400625501 /* HighlighterView.xib */,
+				7873D0001BF4C4E100625501 /* HighlighterView.swift */,
+				7873CFF81BF47A6300625501 /* BrushView.xib */,
+				7873CFFA1BF47A7A00625501 /* EraserView.xib */,
 				78B32DFD1BD62E3B005EE7E2 /* Assets.xcassets */,
 				78B32DFF1BD62E3B005EE7E2 /* LaunchScreen.storyboard */,
 				78B32E021BD62E3B005EE7E2 /* Info.plist */,
@@ -273,8 +285,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				78B32E011BD62E3B005EE7E2 /* LaunchScreen.storyboard in Resources */,
+				7873CFF91BF47A6300625501 /* BrushView.xib in Resources */,
+				7873CFF71BF47A5400625501 /* HighlighterView.xib in Resources */,
 				78B32DFE1BD62E3B005EE7E2 /* Assets.xcassets in Resources */,
 				78B32DFC1BD62E3B005EE7E2 /* Main.storyboard in Resources */,
+				7873CFFB1BF47A7A00625501 /* EraserView.xib in Resources */,
 				78F210D41BEB16600077D6B9 /* add.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -350,6 +365,7 @@
 			files = (
 				78B32DF91BD62E3A005EE7E2 /* ViewController.swift in Sources */,
 				78B32DF71BD62E3A005EE7E2 /* AppDelegate.swift in Sources */,
+				7873D0011BF4C4E100625501 /* HighlighterView.swift in Sources */,
 				787F66D51BD7BF28001BA709 /* TableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

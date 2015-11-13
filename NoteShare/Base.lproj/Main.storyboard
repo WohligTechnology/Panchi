@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="yEx-DJ-Aau">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="XbG-vV-AiD">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
@@ -318,127 +318,54 @@
                     </toolbar>
                     <connections>
                         <segue destination="fSw-qj-SFB" kind="relationship" relationship="rootViewController" id="Ar9-tk-9hJ"/>
-                        <segue destination="YOw-NM-3ZS" kind="show" identifier="terms" id="S69-7x-jKB"/>
-                        <segue destination="rFo-lb-t4L" kind="show" identifier="about" id="kWu-pa-PGb"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="n3k-m3-aLr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-3209" y="526"/>
         </scene>
-        <!--Terms-->
-        <scene sceneID="b4y-vg-BM3">
+        <!--View Controller-->
+        <scene sceneID="GRe-9t-0nf">
             <objects>
-                <viewController title="Terms" id="YOw-NM-3ZS" sceneMemberID="viewController">
+                <viewController id="XbG-vV-AiD" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="AtO-Cc-vdE"/>
-                        <viewControllerLayoutGuide type="bottom" id="YKM-95-z4N"/>
+                        <viewControllerLayoutGuide type="top" id="GDQ-qG-23y"/>
+                        <viewControllerLayoutGuide type="bottom" id="ZlW-96-Ufc"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="cft-1L-P5p">
-                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                    <view key="view" contentMode="scaleToFill" id="nM5-la-5sH">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" editable="NO" textAlignment="justified" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bqT-kt-wKC">
-                                <rect key="frame" x="6" y="0.0" width="308" height="504"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P2b-IW-d35">
+                                <rect key="frame" x="109" y="269" width="102" height="30"/>
                                 <animations/>
-                                <string key="text">GENERAL
-By installing the application (as defined below) you agree to be bound by these terms of use (“appterms”). Please review them carefully before installation and / or acceptance.
-
-DEFINITIONS
-The “Application” shall mean the software provided by &lt;&lt; Insert the Company Name &gt;&gt; to offer a platform to record any users’ notes including text, images, audio and brush stroke for their personal use. 
-
-DATA PROTECTION
-Any personal information you supply to &lt;&lt; insert the Company Name &gt;&gt; when using the Application will be used by &lt;&lt; Insert the Company Name &gt;&gt; in accordance with its Privacy Policy
-All information collected when using the Application will be stored securely and not released or revealed to any other party for the purpose of Marketing
-
-ELECTRONIC COMMUNICATIONS
-When you use any NoteShare Service or send e-mails to us, you are communicating with us electronically. You consent to receive communications from us electronically. We will communicate with you by e-mail or by posting notices on the Application. You agree that all agreements, notices, disclosures and other such communications that we provide to you electronically satisfy any legal requirement that such communication be in writing.
-
-USE OF THIRD PARTY SERVICES
-When you use the NoteShare, you may also be using the services of one or more third parties, such as a wireless carrier or a mobile platform provider. Your use of these third party services may be subject to the separate policies, terms of use and fees of these third parties.
-
-NO REVERSE ENGINEERING
-You may not, and you will not encourage, assist or authorize any other person to modify, reverse engineer, decompile or disassemble, or otherwise tamper with, the NoteShare, whether in whose or in part, or create any derivative works from or of the NoteShare
-
-UPDATES
-In order to keep the NoteShare up-to-date, we may offer automatic or manual updates at any time without notice to you
-
-USE OF NoteShare
-You may use the NoteShare only in connection with the NoteShare. You may not separate any individual component of the NoteShare for use other than in the connection of the above services, incorporate any portion of it into your own programs or compile any portion of it in combination with your own programs, transfer it for use with another service, use it, or any portion of it, over a network, or sell, rent, lease, lend, loan, distribute or sub-license the NoteShare or otherwise assign any rights to the NoteShare in whole or in part. You may not use the NoteShare for any illegal purpose. We may discontinue some or all of any NoteShare we provide, and we may terminate your right to use any NoteShare at any time and in such event may modify it to make it inoperable. Your rights to use the NoteShare will automatically terminate without notice from us if you fail to comply with any of these terms. Additional third party terms contained within or distributed with certain NoteShare that are specifically identified in related documentation may apply to that NoteShare and will govern the use of that NoteShare in the event of a conflict with these conditions of use.
-
-SYSTEM REQUIREMENTS
-In order to access the Application, you are required to have a compatible mobile telephone or handheld device, internet access, and the necessary minimum specifications (“Software Requirements”)
-The Software Requirements are as follows: Apple iOS devices running iOS____________________, and Android OS devices running Android _______________________; Language: ____________________________
-The version of the Application software may be upgraded from time to time to add support for new functions and services
-
-LIMITATION OF LIABILITY
-In no event will &lt;&lt; Insert Company Name &gt;&gt; be liable for any direct, indirect, special, punitive, exemplary or consequential losses or damages of whatsoever kind arising out of your use or access to the Application, including loss of profit or the like whether or not in the contemplation of the parties, whether based on breach of contract, tort (including negligence), product liability or otherwise.
-&lt;&lt; Insert Company Name &gt;&gt; is not liable for any damage or alteration to your equipment including but not limited to computer equipment, handheld device or mobile telephones as a result of the installation or use of the Application</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
+                                <color key="backgroundColor" red="1" green="0.3529411764705882" blue="0.37647058823529411" alpha="1" colorSpace="calibratedRGB"/>
+                                <inset key="contentEdgeInsets" minX="5" minY="0.0" maxX="5" maxY="0.0"/>
+                                <size key="titleShadowOffset" width="2.2250738585072014e-308" height="0.0"/>
+                                <state key="normal" title="Open Popup">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bUN-56-cev" customClass="HighlighterView" customModule="NoteShare" customModuleProvider="target">
+                                <rect key="frame" x="10" y="217" width="300" height="172"/>
+                                <animations/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="bqT-kt-wKC" firstAttribute="leading" secondItem="cft-1L-P5p" secondAttribute="leadingMargin" constant="5" id="0Gk-7S-nZa"/>
-                            <constraint firstItem="bqT-kt-wKC" firstAttribute="top" secondItem="cft-1L-P5p" secondAttribute="top" id="7rI-vz-lcy"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="bqT-kt-wKC" secondAttribute="trailing" constant="-10" id="WYu-Ny-Mhi"/>
-                            <constraint firstItem="bqT-kt-wKC" firstAttribute="leading" secondItem="cft-1L-P5p" secondAttribute="leadingMargin" constant="-10" id="gkP-Xa-f8O"/>
-                            <constraint firstAttribute="bottom" secondItem="bqT-kt-wKC" secondAttribute="bottom" id="hpU-nk-Tmj"/>
+                            <constraint firstItem="P2b-IW-d35" firstAttribute="top" secondItem="GDQ-qG-23y" secondAttribute="bottom" constant="249" id="N8f-sv-Dfe"/>
+                            <constraint firstItem="P2b-IW-d35" firstAttribute="centerX" secondItem="nM5-la-5sH" secondAttribute="centerX" id="XaC-hj-uER"/>
+                            <constraint firstItem="P2b-IW-d35" firstAttribute="leading" secondItem="nM5-la-5sH" secondAttribute="leadingMargin" constant="93" id="ZtM-Jm-aIx"/>
+                            <constraint firstItem="P2b-IW-d35" firstAttribute="centerY" secondItem="nM5-la-5sH" secondAttribute="centerY" id="h7G-Rj-uzf"/>
                         </constraints>
-                        <variation key="default">
-                            <mask key="constraints">
-                                <exclude reference="0Gk-7S-nZa"/>
-                            </mask>
-                        </variation>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="6Cw-O3-dx8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TJZ-wp-gef" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3209" y="1245"/>
-        </scene>
-        <!--About-->
-        <scene sceneID="eTa-fV-VqG">
-            <objects>
-                <viewController title="About" id="rFo-lb-t4L" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="nnm-qz-ggl"/>
-                        <viewControllerLayoutGuide type="bottom" id="xNn-mi-TE4"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="Guh-IO-dfh">
-                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="rkR-Ht-0nq">
-                                <rect key="frame" x="6" y="0.0" width="308" height="502"/>
-                                <animations/>
-                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                        </subviews>
-                        <animations/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstAttribute="trailingMargin" secondItem="rkR-Ht-0nq" secondAttribute="trailing" constant="-10" id="REu-6m-Zvu"/>
-                            <constraint firstItem="rkR-Ht-0nq" firstAttribute="top" secondItem="Guh-IO-dfh" secondAttribute="top" id="Ya4-d7-dDm"/>
-                            <constraint firstAttribute="bottom" secondItem="rkR-Ht-0nq" secondAttribute="bottom" constant="2" id="c8W-Kl-zMJ"/>
-                            <constraint firstItem="rkR-Ht-0nq" firstAttribute="leading" secondItem="Guh-IO-dfh" secondAttribute="leadingMargin" constant="-10" id="gbp-g0-qS0"/>
-                            <constraint firstItem="rkR-Ht-0nq" firstAttribute="leading" secondItem="Guh-IO-dfh" secondAttribute="leadingMargin" constant="5" id="hK7-oJ-86L"/>
-                        </constraints>
-                        <variation key="default">
-                            <mask key="constraints">
-                                <exclude reference="hK7-oJ-86L"/>
-                            </mask>
-                        </variation>
-                    </view>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="27i-ZE-vh0" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-2885" y="1245"/>
+            <point key="canvasLocation" x="-3090" y="1185"/>
         </scene>
     </scenes>
     <resources>
