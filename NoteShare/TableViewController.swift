@@ -73,16 +73,9 @@ class TableViewController: UIViewController, UITableViewDataSource, UITableViewD
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
-        //Put data into cells
-        let reuseIdentifier = "programmaticCell"
-        var cell = tableView.dequeueReusableCellWithIdentifier("cell") as! MGSwipeTableCell!
-        if cell == nil
-        {
-            cell = MGSwipeTableCell(style: UITableViewCellStyle.Subtitle, reuseIdentifier: reuseIdentifier)
-        }
+        let cell = tableView.dequeueReusableCellWithIdentifier("cell") as! MGSwipeTableCell!
         
-        cell.rightButtons = [MGSwipeButton(title: "Gallery", icon: UIImage(named:"add.png"), backgroundColor: mainColor)
-            ,MGSwipeButton(title: "More",backgroundColor: mainColor)]
+        cell.rightButtons = [MGSwipeButton(title: "", icon: UIImage(named:"add.png"), backgroundColor: mainColor),MGSwipeButton(title: "",icon: UIImage(named:"add.png"), backgroundColor: mainColor)]
         
         //Set hover color for the Cells
         let bgView : UIView = UIView()
